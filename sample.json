@@ -1,0 +1,129 @@
+{
+    "d2af1efc57ea72676d84c482318": {
+        "project_name": "Kayobe-test",
+        "cpu_hours": 0.09,
+        "ram_gib_hours": 0.09,
+        "machines": [
+            {
+                "instance_uuid": "93e83185-f3e7-4a23-a1a5-0fed8eb8ff3a",
+                "user_id": "0587482e31e140698a581b276e5fe",
+                "total_cpu_hours": 0.09,
+                "total_ram_gib_hours": 0.09,
+                "details": [
+                    {
+                        "start": "2024-01-12T10:56:59",
+                        "end": "2024-01-12T10:59:41",
+                        "duration_hours": 0.045,
+                        "state": "active",
+                        "flavor_id": 93,
+                        "vcpus": 2,
+                        "ram_gib": 2.0,
+                        "multiplier": 1,
+                        "cpu_hours": 0.09,
+                        "ram_gib_hours": 0.09,
+                        "in_time_range": true
+                    },
+                    {
+                        "start": "2024-01-12T10:59:41",
+                        "end": "2024-02-01T00:00:00",
+                        "duration_hours": 493.0052777777778,
+                        "state": "deleted",
+                        "flavor_id": 93,
+                        "vcpus": 2,
+                        "ram_gib": 2.0,
+                        "multiplier": 0,
+                        "cpu_hours": 0.0,
+                        "ram_gib_hours": 0.0,
+                        "in_time_range": true
+                    }
+                ],
+                "total_duration_hours": 0.04527777777777778,
+                "outside_time_range": false
+            }
+        ],
+        "volumes": [
+            {
+                "volume_id": "ea5d2e3b-df33-4b1e-8966-4152cdd7bd06",
+                "project_id": "d2af1efc57ea72676d84c482318",
+                "volume_type_name": "hdd-fast",
+                "size_gb": 20,
+                "gib_hours": 9861.0,
+                "details": {
+                    "interval_start": "2024-01-12T10:57:00",
+                    "interval_end": "2024-02-01T00:00:00",
+                    "duration_hours": 493.05
+                }
+            }
+        ],
+        "volume_gib_hours_per_type": {
+            "hdd-fast": 9861.0
+        },
+        "images": [],
+        "image_gib_hours": 0,
+        "reservations": [
+            {
+                "created_at": "2024-01-12T10:57:00",
+                "project_id": "d2af1efc57ea72676d84c482318",
+                "resources": [
+                    {
+                        "resource": "volumes",
+                        "delta": 1
+                    },
+                    {
+                        "resource": "gigabytes",
+                        "delta": 20
+                    },
+                    {
+                        "resource": "volumes_hdd-fast",
+                        "delta": 1
+                    },
+                    {
+                        "resource": "gigabytes_hdd-fast",
+                        "delta": 20
+                    }
+                ]
+            }
+        ]
+    },
+    "aaff2eb8f3b74229af48a023": {
+        "project_name": "TEST Project 2",
+        "cpu_hours": 0,
+        "ram_gib_hours": 0,
+        "volume_gib_hours_per_type": {
+            "hdd-fast": 12160.0
+        },
+        "machines": [],
+        "volumes": [
+            {
+                "volume_id": "001b4029-640a-4d30-a639-88965b05e567",
+                "project_id": "aaff2eb8f3b74229af48a023",
+                "volume_type_name": "hdd-fast",
+                "size_gb": 15,
+                "gib_hours": 12160.0,
+                "details": {
+                    "interval_start": "2024-01-01T00:00:00",
+                    "interval_end": "2024-02-01T00:00:00",
+                    "duration_hours": 744.0
+                }
+            }
+        ],
+        "images": [
+            {
+                "image_id": "d35df0bc-8155-48b0-a868-499a30f7eafd",
+                "project_id": "4eb0072fe6204568-933ca70c21b25886",
+                "image_name": "testimage",
+                "size_gb": 1.9223742485046387,
+                "gib_hours": 1430.2464408874512,
+                "details": {
+                    "interval_start": "2024-01-01T00:00:00",
+                    "interval_end": "2024-02-01T00:00:00",
+                    "duration_hours": 744.0,
+                    "image_created": "2023-12-29T13:37:57",
+                    "image_deleted": "none"
+                }
+            }
+        ],
+        "image_gib_hours": 1430.2464408874512,
+        "reservations": []
+    }
+}
